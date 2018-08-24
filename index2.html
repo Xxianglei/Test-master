@@ -18,11 +18,14 @@
 	<body onmousemove=/HideMenu()/ oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
 		<div class="container" id="particles">
 
-			<h1 align=" center">数据库工作室Java考核<small >(二)</small></h1>
+			<h1 align=" center">数据库工作室Java考核<small >(老生)</small></h1>
 			<br />
 			<div align="right"><button type="button" class="btn btn-success">时间:120分钟</button></div>
+			
 			<br />
-			<hr />
+				<hr />
+			<div class="well well-sm"><font color="red">请将非编程题的答案按序号写到一个(姓名.txt)文件中,编程题直接将你的工程文件压缩打包到(姓名.zip),最终将这两个文件存入到一个写有姓名文件夹下</font></div>
+		
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingOne">
@@ -35,13 +38,12 @@
 					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 						<div class="panel-body">
 							<ul>
-								
+
 								<li>写出给一个String数组分配七个元素的语句</li>
-							
+
 								<li>简述this和super关键字的使用场景分别是什么</li>
 								<li>使用接口有什么意义或好处</li>
 								<li>写出在Java中常见的两种创建线程方式</li>
-								
 
 							</ul>
 
@@ -138,51 +140,57 @@
 							<div class="panel-body">
 
 								<p> <strong>1.</strong>随手输入一字符串如"DBroom1411",再输入一个字符如'D'判断是否存在与该字符串中,输出判断结果</p><br />
-								<p> <strong>2.</strong>编写程序，对输入的一个整数，按相反顺序输出该数。例如，输入为 3578，输出为 8753。</p><br />
+								<p> <strong>2.</strong>编写程序，输入的一组数据，然后按相反顺序输出。例如，输入为 9512，输出为 2159。</p><br />
 								<p> <strong>3.</strong>运用接口回调编写程序,实现对话</p>
 								<ul>
-									<li>今天产品经理给了小王一个需求:这个需求你改一下,让APP随手机壳的颜色而变!咋样?小王说:行行行 改改改 老板牛逼 老板好眼光 老板好能耐 我辞职  ok?!不多哔哔...</li>
+									<li>今天产品经理给了小王一个需求:这个需求你改一下,让APP随手机壳的颜色而变!咋样?小王说:行行行 改改改 老板牛逼 老板好眼光 老板好能耐 我辞职 ok?!不多哔哔...</li>
 									<li>题目要求：</li>
 									<ul>
 										<li>
-											使用接口回调机制实现如此对话过程 
-											
+											使用接口回调机制实现如此对话过程
+
 										</li>
-										<li>接口:Callback 接口方法:void event()</li>  
-										<li>老板类Manager 方法: void Say(Callback callback)...  </li>
-										<li>小王类Coder  方法: void SayBye()...</li>
+										<li>接口:Callback 接口方法:void event()</li>
+										<li>老板类Manager 方法: void Say(Callback callback)... </li>
+										<li>小王类Coder 方法: void SayBye()...</li>
 										<li>
 											小王每句话的间隔是一秒钟
 										</li>
 										<li>
-										    小王的话可以如此存放:String []words= {"行行行","改改改","老板牛逼","老板好眼光","老板好能耐"};
+											小王的话可以如此存放:String []words= {"行行行","改改改","老板牛逼","老板好眼光","老板好能耐"};
 										</li>
 									</ul>
 									<li>最后编写测试类test实现该对话过程</li>
 
 								</ul><br />
-								<p> <strong>4.</strong>启动2个线程打印递增的数字, 线程one先打印1,2,3,4,5间隔一秒, 然后是线程two后打印6,7,8,9,10间隔一秒,然后再回到线程1打印11,12,13,14,15间隔一秒,以此类推直到25结束,每次打印写出当前执行的线程名字以及数值<font color="brown">(可用synchronized)</font></p><br />
-								<p> <strong>5.</strong>使用JDBC连接数据库,查询出数据库中学生表student的信息按性别(sex)分组(按顺序写出关键的步骤如导入jar包等)<font color="brown">(写出SQL语句)</font></p><br />
+								<p> <strong>4.</strong>启动2个线程打印递增的数字, 线程one先打印1,2,3,4,5间隔一秒, 然后是线程two后打印6,7,8,9,10间隔一秒,然后再回到线程1打印11,12,13,14,15间隔一秒,以此类推直到25结束,每次打印写出当前执行的线程名字以及数值
+									<font color="brown">(可用synchronized)</font>
+								</p><br />
+								<p> <strong>5.</strong>使用JDBC连接数据库,查询出数据库中学生表student的信息按性别(sex)分组(按顺序写出关键的步骤如导入jar包等)
+									<font color="brown">(写出SQL语句)</font>
+								</p><br />
 								<p> <strong>6.</strong>构建一个List
 									<String>集合,将输入的六个字符串"夜雨冻""雨点透射到照片中""回头似是梦""无法弹动""迷住凝望你""褪色照片中"存入其中,最后遍历出List集合中的所有元素,拼接成一句歌词</p>
 								<div class="panel panel-default">
 									<div class="panel-body">
 										<ul>
-											<li >夜雨冻</li>
-											<li >雨点透射到照片中</li>
-											<li >回头似是梦</li>
-											<li >无法弹动</li>
-											<li >迷住凝望你</li>
-											<li >褪色照片中</li>
+											<li>夜雨冻</li>
+											<li>雨点透射到照片中</li>
+											<li>回头似是梦</li>
+											<li>无法弹动</li>
+											<li>迷住凝望你</li>
+											<li>褪色照片中</li>
 										</ul>
 									</div>
 								</div>
 								<br />
-								<p> <strong>7.</strong>从命令行读入一个字符串，表示一个年份.<font color="brown">(HashMap)</font></p>
+								<p> <strong>7.</strong>现有如下格式的数据,需要你在控制台先将如下数据中的年份和对应的冠军存入到一个你认为合适的对象里面.
+									<font color="brown">(HashMap)</font>
+								</p>
 								<ol>
 
-									<li> 输入年份如果该年没有举办世界杯，则输出：没有举办世界杯</li>
-									<li> 读入一支球队的名字，输出该球队夺冠的年份列表,如输入"中国" 应当输出 这几年没有获得过世界杯 </li>
+									<li> 在控制台输入年份,如果这一年没有举办，则输出：没有举办世界杯!</li>
+									<li> 在控制台输入一支球队的名字，输出这一只球队所有的夺冠年份,如输入"中国" 应当输出 这几年没有获得过世界杯 </li>
 								</ol>
 								</p>
 								<table class="table table-condensed">

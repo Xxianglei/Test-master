@@ -22,12 +22,12 @@
 
 		<div class="container" id="particles">
 
-			<h1 align=" center">数据库工作室Java考核<small>(一)</small></h1>
+			<h1 align=" center">数据库工作室Java考核<small>(三人)</small></h1>
 			<br />
 			<div align="right"><button type="button" class="btn btn-success">时间:120分钟</button></div>
 			<br />
 			<hr />
-
+<div class="well well-sm"><font color="red">请将非编程题的答案按序号写到一个(姓名.txt)文件中,编程题直接将你的工程文件压缩打包到(姓名.zip),最终将这两个文件存入到一个写有姓名文件夹下</font></div>
 			<font face="楷体">
 				<div class="panel panel-default">
 					<div class="panel-body">
@@ -90,8 +90,13 @@
 				<li>编写模拟器类Simulator</li>
 			</p>
 			<p>该类有一个playSound(Animal animal)方法，该方法的参数是Animal类型。即参数animal可以调用Animal的子类重写的cry()方法播放具体动物的声音，调用子类重写的 getAnimalName()方法显示动物种类的名称。</p>
-			<p><strong>4. </strong>创建Student接口(即“学生”)，它有setData()和getData()方法对“学生”属性name、sex赋值和获得这些属性组成的字符串信息。创建类MiddeStudent实现Student接口，并对MiddeStudent的成员变量sid、score设置值和输出你设置的信息。</p><br />
-			<p><strong>5. </strong>复制一份txt文件，从c盘复制到D盘目录下</p>
+			<p><strong>4. </strong>利用接口做参数，写个计算器，能完成加减乘除运算。--接口回调 <br />
+（1）定义一个接口Compute含有一个方法int computer(int n, int m)。 <br />
+（2）设计四个类分别实现此接口，完成加减乘除运算。(除法运算中使用try-catch语句捕捉分母为零异常) <br />
+（3）设计一个类UseCompute，类中含有方法：public void useCom(Compute com, int one, int two)，
+	此方法能够用传递过来的对象调用computer方法完成运算，并输出运算的结果。 <br />
+（4）设计一个主类Test，调用UseCompute中的方法useCom来完成加减乘除运算</p><br />
+			<p><strong>5. </strong>复制一份txt文件，从c盘复制到D盘目录下	<a href="test.txt" class="btn btn-primary btn-xs active" role="button" download="test.txt"> 文档下载</a></p>
 			<ul>
 				<li>在目的地址创建一个txt文件</li>
 				<li>读取源地址文件的字节流</li>
