@@ -2,9 +2,9 @@
 <html>
 
 	<head>
-		<meta charset="utf-8" />
-		<title>数据库工作室java测试 </title>
-		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<meta charset="UTF-8">
+		<title>数据库工作室</title>
+
 		<link rel="stylesheet" href="css/bootstrap.css" />
 
 		<!--需要引入JQuery-->
@@ -14,114 +14,162 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- 定时-->
 	</head>
-	<!--禁止网页内容复制．-->
 
 	<body onmousemove=/HideMenu()/ oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
-
 		<div class="container" id="particles">
 
-			<h1 align=" center">数据库工作室Java考核<small>(三人)</small></h1>
 			<br />
-			<div align="right"><button type="button" class="btn btn-success">时间:120分钟</button></div>
-			<br />
-			<hr />
-<div class="well well-sm"><font color="red">请将非编程题的答案按序号写到一个(姓名.txt)文件中,编程题直接将你的工程文件压缩打包到(姓名.zip),最终将这两个文件存入到一个写有姓名文件夹下</font></div>
-			<font face="楷体">
+			<div class="jumbotron">
+				<h1>数据库工作室Java考核</h1>
+				<div align="right"><button type="button" class="btn btn-success">时间:2019-3-16 6.10-9.30</button></div>
+				<div align="right" style="margin-top: 10px;">
+					<a href="JDK_API_1_6_zh_CN.CHM" class="btn btn-primary btn-mi active" role="button" download="JDK_API_1_6_zh_CN.CHM">点我下载API文档</a>
+				</div>
+
+			</div>
+			<div class="well well-sm">
+				<font color="red">请直接将你的工程文件压缩打包到(姓名.zip)！
+				</font>
+				<font color="#1B6D85">允许使用JDK的API文档,文档在右上角！点击下载！</font>
+				<font color="#255625" style="text-align: right;">点击星星查看题目！</font>
+			</div>
+
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
-					<div class="panel-body">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <font face="楷体" size="4">  ⭐</font>
+        </a>
+      </h4>
+					</div>
+					<div id="collapseOne" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							<p> <strong>1.</strong>给定一个string1字符串和一个 string2字符串，在 string1字符串中找出 string2字符串出现的第一个位置 (从0开始)。如果不存在，则返回 -1。</p>
+							<ul>
+								<li>示例 1:</li>
+								<li>输入: string1= "welcome", string2= "me"</li>
 
-						<h3> 简答题</h3></font>
+								<li>输出: 5</li>
 
-			<ul>
-				<li>单精度浮点类型如何定义</li>
-				<li>写出给一个int数组分配四个元素的语句</li>
-				<li>面向对象的三个特点</li>
-				<li>java的多态表现形式为哪两种.</li>
-				<li>简单表达一下你对继承概念的理解.</li>
-				<li>描述JDBC操作数据库的主要步骤（可用汉字描述)</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+							<h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         <font face="楷体" size="4">  ⭐⭐</font>
+        </a>
+      </h4>
+						</div>
+						<div id="collapseTwo" class=" collapse " role="tabpanel" aria-labelledby="headingTwo">
+							<div class="panel-body">
+								<p> <strong>1.</strong>实现对一个数n的平方根求解（取整数）</p>
+								<ul>
+									<li>如：输入4 输出2/li>
+										<li> 输入8 输出2</li>
 
-			</ul>
-			<font face="楷体">
-				<h3> 读程序</h3></font>
-			<strong>1. </strong>
-			<code>public class ThisAnalyse {<br />
-	          private String fruit = "香蕉"；<br />
- 
-	private void eat(String fruit) {<br />
-		System.Out.println("传递过来的参数：" + fruit)；<br />
-		System.Out.println("函数所在类本身的成员变量：" + this.fruit)；<br />
-		this.fruit = fruit;<br />
-	}<br />
- 
-	public static void main(String[] args) {<br />
-		ThisAnalyse thisAnalyse = new ThisAnalyse()；<br />
-		thisAnalyse.eat("苹果")；<br />
-		System.Out.println("修改后的成员变量：" + thisAnalyse.fruit)；<br />
-	}<br />
-}</code><br />
-			<strong>2. </strong>
-			<code>public static int method() {<br />
-		int a = 1;<br />
-		try {<br />
-			int  u=1/0;<br />
-			return a;<br />
-		} catch (Exception e) {<br />
-			System.out.println("11");<br />
-		} finally {<br />
-			++a;<br />
-			return a;<br />
-		}<br />
-｝</code>
+										<li>输入9 输出3</li>
 
-			<font face="楷体">
-				<h3> 编程题</h3></font>
+								</ul><br />
+								<p> <strong>2.</strong>给定一个仅包含大小写字母和空格 ' ' 的字符串，返回其最后一个单词的长度。如果不存在最后一个单词，请返回 0 。</p>
+								<ul>
+									<li>如：输入: "Hello DataBase"</li>
+									<li> 输出: 5</li>
 
-			<p><strong>1. </strong>定义一个数组存放五个数字如｛12，45，67，89，123｝，并且判断你输入的数字是否在其中（要求用String的相关知识实现）</p><br />
-			<p><strong>2. </strong>编写一个程序求1！+2！+...100！</p><br />
-			<p><strong>3. </strong>设计一个动物声音模拟器，希望模拟器可以模拟许多动物的叫声，要求如下：</p>
-			<p>
-				<li>编写抽象类Animal</li>
-			</p>
-			<p>Aminal抽象类有两个抽象方法cry()和getAnimalName(),即要求各种具体的动物给出自己的叫声和种类名称。
-			</p>
-			<p>
-				<li>编写模拟器类Simulator</li>
-			</p>
-			<p>该类有一个playSound(Animal animal)方法，该方法的参数是Animal类型。即参数animal可以调用Animal的子类重写的cry()方法播放具体动物的声音，调用子类重写的 getAnimalName()方法显示动物种类的名称。</p>
-			<p><strong>4. </strong>利用接口做参数，写个计算器，能完成加减乘除运算。--接口回调 <br />
-（1）定义一个接口Compute含有一个方法int computer(int n, int m)。 <br />
-（2）设计四个类分别实现此接口，完成加减乘除运算。(除法运算中使用try-catch语句捕捉分母为零异常) <br />
-（3）设计一个类UseCompute，类中含有方法：public void useCom(Compute com, int one, int two)，
-	此方法能够用传递过来的对象调用computer方法完成运算，并输出运算的结果。 <br />
-（4）设计一个主类Test，调用UseCompute中的方法useCom来完成加减乘除运算</p><br />
-			<p><strong>5. </strong>复制一份txt文件，从c盘复制到D盘目录下	<a href="test.txt" class="btn btn-primary btn-xs active" role="button" download="test.txt"> 文档下载</a></p>
-			<ul>
-				<li>在目的地址创建一个txt文件</li>
-				<li>读取源地址文件的字节流</li>
-				<li>把读取到的字节流写入到目的地址的文件里面</li>
-				<li>关闭流</li>
+								</ul><br />
+								<p> <strong>3.</strong>创建两个线程Cat 和Dog 在run方法中cat类输出6次喵喵喵且每次间隔0.5s，dog类输出汪汪汪且每次间隔1s。在AnimalTest中创建对象并且开启两个线程，打印结果</p><br />
+								<p> <strong>4.</strong> 编程实现人类Person类Person拥有私有属性身高height和体重weight，请为Person类至少提供两种构造方法，</br>&nbsp;&nbsp;&nbsp;&nbsp;于此同时提供计算体质指数方法（BMI）公式：体质指数=体重（kg）÷身高^2（m）的方法。</br>&nbsp;&nbsp;&nbsp;&nbsp;请使用你的两个构造方法创建对象，并计算体质指数。</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+							<h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <font face="楷体" size="4"> ⭐⭐⭐</font>
+           
+        </a>
+      </h4>
+						</div>
+						<div id="collapseThree" class=" collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body">
 
-			</ul>
+								<p> <strong>1.</strong>利用接口做“参数”例：（Computer接口，数A，数B），实现一个能够乘除的计算器。</p><br />
+								<p> <strong>2.</strong>随意读取你电脑上的一个txt文件文件内容为HelloWorld，在控制台输出。</p><br />
+								<p> <strong>3.</strong>运用接口回调编写程序,实现对话</p>
 
-			<p><strong>6.</strong>定义一个TestThread线程测试类，开辟两个线程，线程一作1到50的奇数求和，作1-50的累加。并打印输出结果</p><br />
-			<hr />
+							</div>
+						</div>
+					</div>
 
-			<br />
-			<button type="button" class="btn btn-warning">附加题:(不计入成绩)</button><br />
-			<br />
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingFour">
+							<h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+         <font face="楷体" size="4"> ⭐⭐⭐⭐</font>
+           
+        </a>
+      </h4>
+						</div>
+						<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body">
 
-			<p>
-				<strong>7.</strong>给我一个足够让你留下的理由
+								<p> <strong>1.</strong>现有两个售票窗口同时出售10张票，卖完为止。请使用多线程同步知识解决。</p><br />
+								<p> <strong>2.</strong>给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。给定数组 nums = [1,1,2], 函数应该返回新的长度 2。</p>
 
-			</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingFive">
+							<h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+         <font face="楷体" size="4"> ⭐⭐⭐⭐⭐</font>
+           
+        </a>
+      </h4>
+						</div>
+						<div id="collapseFive" class=" collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body">
+
+								<p> <strong>1.</strong>如何简单的让new Demo（）这样创建对象的方式失效？该方式失效后我们还有其他方式在MainTest主类中创建Demo类对象的方法吗？比如用到static关键字？</p><br />
+
+							</div>
+						</div>
+					</div>
+
+					<div class="alert alert-danger" role="alert" align="center">禁止百度抄袭,若发现考核记<b>"0"</b>分处理</div>
+				</div>
 			</div>
-			</div>
-
-			<div class="alert alert-danger" role="alert" align="center">禁止百度抄袭,若发现考试记<b>"0"</b>分处理</div>
-		</div>
-
+			<script>
+				function forbidKeyboard() {
+					$(document).keydown(function(e) {
+						/*9:Tab键, 17：Control键, 18:Alt键, 123:F12键, 83:S键*/
+						var keyboardCode = [9, 17, 18, 123,16,74];
+						for(i in keyboardCode) {
+							if(keyboardCode[i] == e.keyCode) {
+								alert("想看源码？不存在的！专心做题！");
+								return false;
+							}
+						}
+						if((e.keyCode == 83) && (e.ctrlKey || e.metaKey)) {
+								alert("想看源码？不存在的！专心做题！");
+							return false;
+						}
+					});
+					/*禁止文本选择功能*/
+					$(document).bind("selectstart", function() {
+						return false;
+					});
+				}
+				$(function() {
+					forbidKeyboard();
+				});
+			</script>
 	</body>
 
 </html>
